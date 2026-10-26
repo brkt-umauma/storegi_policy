@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StoRegi サポート / Support</title>
+    <style>
+      :root {
+        --bg: #fbfbfe;
+        --fg: #1c1b20;
+        --muted: #5b5a63;
+        --rule: #dcdbe4;
+        --accent: #26456f;
+        --card: #ffffff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #16161a;
+          --fg: #e9e8ee;
+          --muted: #a4a3ad;
+          --rule: #32313a;
+          --accent: #9db8e0;
+          --card: #1e1e24;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic UI', sans-serif;
+        line-height: 1.85;
+        font-size: 16px;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 3rem 1.25rem 5rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        margin: 0 0 0.25rem;
+      }
+      h2 {
+        font-size: 1.05rem;
+        margin: 2.75rem 0 0.75rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--rule);
+        color: var(--accent);
+      }
+      h3 {
+        font-size: 0.95rem;
+        margin: 1.5rem 0 0.5rem;
+      }
+      p,
+      li {
+        margin: 0.6rem 0;
+      }
+      ul {
+        padding-left: 1.3rem;
+      }
+      .sub {
+        color: var(--muted);
+        margin: 0 0 2rem;
+        font-size: 0.95rem;
+      }
+      .lede {
+        background: var(--card);
+        border: 1px solid var(--rule);
+        border-radius: 0.6rem;
+        padding: 1rem 1.25rem;
+        margin: 1.5rem 0;
+      }
+      .lede p {
+        margin: 0.35rem 0;
+      }
+      strong {
+        font-weight: 700;
+      }
+      footer {
+        margin-top: 3.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--rule);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.9em;
+        background: var(--card);
+        border: 1px solid var(--rule);
+        border-radius: 0.25rem;
+        padding: 0.1em 0.35em;
+      }
+      .en {
+        margin-top: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>StoRegi サポート</h1>
+      <p class="sub">即売会の会計＆在庫管理</p>
+
+      <div class="lede">
+        <p><strong>お問い合わせはこちらまで:</strong></p>
+        <p><code>brkt.tnkt@gmail.com</code></p>
+        <p>不具合のご報告、ご要望、使い方のご質問を受け付けています。</p>
+      </div>
+
+      <h2>お問い合わせのときにお知らせいただきたいこと</h2>
+      <p>不具合のご報告では、次の情報があると原因を特定しやすくなります。</p>
+      <ul>
+        <li>ご利用の端末（iPhone / iPad / Android の機種名）</li>
+        <li>アプリのバージョン</li>
+        <li>どの画面で、どんな操作をしたときに起きたか</li>
+        <li>画面の写真（あれば）</li>
+      </ul>
+
+      <h2>よくあるご質問</h2>
+
+      <h3>Q.データはどこに保存されますか？</h3>
+      <p>
+        A.すべて端末の中にのみ保存されます。サーバーへは送信しません。詳しくは<a href="./">プライバシーポリシー</a
+        >をご覧ください。
+      </p>
+
+      <h3>Q.機種変更するときはどうすればよいですか？</h3>
+      <p>
+        A.設定画面の「データの引き継ぎ」から、頒布物・イベント・売上をCSVファイルとして書き出せます。新しい端末で同じ画面から読み込んでください。
+      </p>
+      <p>
+        <strong>アプリを削除するとデータも消えます。</strong>
+        データを引き継ぎたい場合、削除前に必ず書き出してください。
+      </p>
+
+      <h3>Q.支出（原価）は引き継げますか？</h3>
+      <p>
+        A.現在のCSVには含まれていません。引き継いだ直後は、すべての頒布物が「原価未登録」として表示されます。お手数ですが、支出は新しい端末で登録し直してください。
+      </p>
+
+      <h3>Q.会計を間違えました。取り消せますか？</h3>
+      <p>
+        A.当日中であれば、レジのお釣り画面または履歴から何件でも取り消せます。<strong
+          >翌日以降は取り消せません。</strong
+        >
+        翌日以降に気づいた場合は、在庫画面の棚卸で数を合わせてください。
+      </p>
+
+      <h3>Q.複数人で同じデータを使えますか？</h3>
+      <p>A.共有、同期の機能は実装していないため、使えません。</p>
+
+      <h3>Q.通販の受注や委託の精算は管理できますか？</h3>
+      <p>A.委託は「在庫の行き先」としてのみ記録できるため、通販の受注や委託の精算は管理できません。</p>
+
+      <h3>Q.インターネットに接続していなくても使えますか？</h3>
+      <p>A.利用できます。電波の届かない会場でも、すべての機能がそのまま使えます。</p>
+
+      <h2>関連ページ</h2>
+      <p><a href="./">プライバシーポリシー</a></p>
+
+      <div class="en">
+        <h1>StoRegi Support</h1>
+        <p class="sub">An inventory and point-of-sale app for doujin circles</p>
+
+        <div class="lede">
+          <p><strong>For support, please contact:</strong></p>
+          <p><code>brkt.tnkt@gmail.com</code></p>
+          <p>Bug reports, feature requests, and questions are all welcome.</p>
+        </div>
+
+        <h2>When Reporting a Problem</h2>
+        <p>The following details help us identify the cause:</p>
+        <ul>
+          <li>Your device (iPhone, iPad, or Android model)</li>
+          <li>The app version</li>
+          <li>Which screen you were on and what you did</li>
+          <li>A photo of the screen, if available</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>Q. Where is my data stored?</h3>
+        <p>
+          A. Entirely on your device. Nothing is sent to any server. See the <a href="./">privacy policy</a> for
+          details.
+        </p>
+
+        <h3>Q. How do I move my data to a new device?</h3>
+        <p>
+          A. Open the settings screen and use the data transfer feature to export your products, events, and sales as
+          CSV files, then import them on the new device from the same screen.
+        </p>
+        <p>
+          <strong>Uninstalling the app deletes your data.</strong> Export before uninstalling if you want to keep it.
+        </p>
+
+        <h3>Q. Are expenses included in the export?</h3>
+        <p>
+          A. Not currently. After importing, every product will show as having no recorded cost. You will need to
+          re-enter expenses on the new device.
+        </p>
+
+        <h3>Q. I made a mistake at the register. Can I undo it?</h3>
+        <p>
+          A. Yes, on the same day — from the change screen or the transaction history, as many times as needed.
+          <strong>Transactions cannot be voided on later days.</strong> This keeps a day's reconciled cash count from
+          changing after the fact. To correct an older mistake, adjust the quantity through a stocktake instead.
+        </p>
+
+        <h3>Q. Can several people share the same data?</h3>
+        <p>
+          A. No. This app is built for a single circle member. Each device holds its own independent data, and there is
+          no sharing or syncing.
+        </p>
+
+        <h3>Q. Does it handle online sales or consignment settlements?</h3>
+        <p>
+          A. No. The app covers selling at events. Consignment is recorded only as a destination for stock; revenue and
+          commission are not calculated.
+        </p>
+
+        <h3>Q. Does it work without an internet connection?</h3>
+        <p>A. Yes. Everything works at venues with no signal.</p>
+
+        <h2>Related</h2>
+        <p><a href="./">Privacy Policy</a></p>
+      </div>
+
+      <footer>
+        StoRegi：即売会の会計＆在庫管理<br />
+        An inventory and point-of-sale app for doujin circles.
+      </footer>
+    </main>
+  </body>
+</html>
